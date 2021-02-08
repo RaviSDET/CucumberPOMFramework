@@ -44,13 +44,13 @@ public class ApplicationHooks {
 		driver.quit();
 	}
 
-	@After(order = 1)
-	public void tearDown(Scenario scenario) {
-		if (scenario.isFailed()) {
-			String screenshotName = scenario.getName().replaceAll(" ", "_");
-			byte[] sourcepath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-			scenario.attach(sourcepath, "img/png", screenshotName);
-		}
-	}
+//	@After(order = 1)
+//	public void tearDown(Scenario scenario) {
+//		if (scenario.isFailed()) {
+//			String screenshotName = scenario.getName().replaceAll(" ", "_");
+//			byte[] sourcepath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//			scenario.attach(sourcepath, "img/png", screenshotName);
+//		}
+//	}
 
 }

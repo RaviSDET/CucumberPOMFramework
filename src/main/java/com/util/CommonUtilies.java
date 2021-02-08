@@ -14,7 +14,7 @@ public class CommonUtilies {
 
 	public void lauchBrowser() {
 		DriverFactory.getDriver()
-				.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+				.get("https://shopee.sg");
 	}
      
 	public void waitMethod() {
