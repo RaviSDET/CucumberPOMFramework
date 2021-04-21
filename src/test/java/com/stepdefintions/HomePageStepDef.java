@@ -22,6 +22,8 @@ public class HomePageStepDef {
 		//commonUtilies.waitMethod();
 
 		homePage.clickOnCart();
+		
+		//Automationtesting
 	}
 
 }
